@@ -2,7 +2,13 @@
 const nextConfig = {
   devIndicators: false,
   images: {
-    remotePatterns: [{ protocol: "**", hostname: "**" }],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**.strapiapp.com",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
