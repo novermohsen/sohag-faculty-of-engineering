@@ -8,7 +8,9 @@ import { getNewsData } from "@/lib/getApiData";
 import NewsPostCard from "./components/cards/NewsPostCard";
 export default async function Home() {
   let newsData = await getNewsData();
-  newsData.length = 3;
+  if (newsData != null) {
+    newsData.length = 3;
+  }
   return (
     <>
       <section className="landing-page flex justify-center items-center">
