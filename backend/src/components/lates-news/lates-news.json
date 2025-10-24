@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_lates_news_lates_news",
+  "info": {
+    "displayName": "lates-news",
+    "icon": "pencil"
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  },
+  "config": {}
+}

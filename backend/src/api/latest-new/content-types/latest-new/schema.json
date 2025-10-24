@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "latest_news",
+  "info": {
+    "singularName": "latest-new",
+    "pluralName": "latest-news",
+    "displayName": "latest new"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "اسم الخبر",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "tailwindcss";
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+body {
+  direction: rtl;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  @apply max-w-5xl mx-auto;
+}
+.show-nav {
+  animation: showUp 0.3s linear;
+}
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.li-nav-bar {
+  @apply px-3 py-2 relative text-center duration-150 hover:text-white z-2;
+}
+.li-nav-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: 0.2s;
+}
+.li-nav-bar:hover::before {
+  @apply bg-amber-800 rounded-sm;
+  width: 100%;
+}
+.landing-page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      oklch(20.841% 0.04169 266.371 / 0.75),
+      oklch(12.985% 0.04254 265.146 / 0.8)
+    ),
+    url("../public/images/backImage.webp");
+  background-position: center;
+  background-size: cover;
+}
+@keyframes showUp {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.BlocksRenderer h1 {
+  @apply text-4xl m-2;
+}
+.BlocksRenderer h2 {
+  @apply text-3xl my-2;
+}
+.BlocksRenderer h3 {
+  @apply text-2xl my-2;
+}
+.BlocksRenderer h4 {
+  @apply text-xl my-2;
+}
+.BlocksRenderer h5 {
+  @apply text-xl my-2;
+}
+.BlocksRenderer p {
+  @apply text-xl my-2 font-semibold;
+}
+.BlocksRenderer ul {
+  @apply px-5 m-2 text-xl;
+  list-style-type: initial;
+}
+.BlocksRenderer a {
+  @apply underline text-amber-600 hover:text-amber-800 duration-150 text-2xl font-bold m-2;
+}
+.Link-list {
+  @apply text-slate-900 hover:bg-slate-200 duration-150 hover:text-amber-700 text-center p-3 rounded-md;
+}
+.links-list:hover .perant {
+  display: block;
+}
+.li-icon-rotate svg {
+  transition: 0.3s;
+}
+.li-icon-rotate:hover svg {
+  transform: rotate(180deg);
+}

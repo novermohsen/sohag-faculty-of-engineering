@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_specializtion_specializtions",
+  "info": {
+    "displayName": "specializtion",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "specializtion": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

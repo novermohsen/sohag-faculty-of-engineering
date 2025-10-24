@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_article_component_articles",
+  "info": {
+    "displayName": "article",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "article_name": {
+      "type": "string",
+      "default": "عنوان المقال",
+      "required": true
+    },
+    "article_description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

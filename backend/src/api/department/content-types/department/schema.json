@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departments",
+  "info": {
+    "singularName": "department",
+    "pluralName": "departments",
+    "displayName": "Department"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "اسم القسم",
+      "required": true
+    },
+    "path": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "thmbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "depratmentType": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "عام",
+        "خاص"
+      ]
+    },
+    "specializtion": {
+      "type": "component",
+      "component": "specializtion.specializtion",
+      "repeatable": true
+    },
+    "articles": {
+      "type": "component",
+      "component": "article-component.article",
+      "repeatable": true
+    }
+  }
+}
