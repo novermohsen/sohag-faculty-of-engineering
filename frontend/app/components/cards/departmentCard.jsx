@@ -9,7 +9,8 @@ function CardDepartment({ img, alt, title, href }) {
     >
       <div className="h-[180px] w-full overflow-hidden rounded-sm">
         <Image
-          src={`${process.env.STRAPI_HOST}${img}`}
+          // src={`${process.env.STRAPI_HOST}${img}`}
+          src={img}
           width={450}
           height={350}
           alt={alt}

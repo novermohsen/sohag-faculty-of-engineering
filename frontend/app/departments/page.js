@@ -11,6 +11,7 @@ export default async function Departments() {
         return (
           <CardDepartment
             key={id}
+            // img={department?.thmbnail?.formats?.small?.url || null}
             img={department?.thmbnail?.formats?.small?.url || null}
             alt={department?.title}
             title={department?.title || "image for card department"}

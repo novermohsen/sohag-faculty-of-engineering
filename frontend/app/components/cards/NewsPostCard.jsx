@@ -15,7 +15,8 @@ function NewsPostCard({ img, alt, title, date, href = "/" }) {
         width={300}
         height={300}
         sizes="(max-width: 768px) 100vw, 50vw"
-        src={`${process.env.STRAPI_HOST}${img}`}
+        // src={`${process.env.STRAPI_HOST}${img}`}
+        src={img}
         alt={alt || "image undefined"}
         className="max-h-50 hover:scale-105 duration-150 w-full aspect-video"
       />
