@@ -1,6 +1,50 @@
 import DepartmentCompnent from "@/app/components/department/departmentComponent";
 import { getDepartmentsData } from "@/lib/getApiData";
 
+export async function generateMetadata({ params }) {
+  const { path } = await params;
+  const Departments = await getDepartmentsData();
+  const Department = Departments.find((ele) => ele.path === path);
+  return {
+    title: Department?.title,
+    description: Department?.description,
+    openGraph: {
+      title: Department?.title,
+      description: Department?.description,
+      url: `sohag-faculty-of-engineering.vercel.app/departments/${path}`,
+      images: [
+        {
+          url: "/icon/metadataImage.png",
+          width: 1200,
+          height: 630,
+          alt: "صورة كلية الهندسة جامعة سوهاج",
+        },
+      ],
+      locale: "ar_EG",
+      type: "website",
+    },
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": "-1",
+      },
+    },
+    alternates: {
+      canonical: `sohag-faculty-of-engineering.vercel.app/departments/${path}`,
+      languages: {
+        "ar-EG": `sohag-faculty-of-engineering.vercel.app/departments/${path}`,
+        "x-default": `sohag-faculty-of-engineering.vercel.app/departments/${path}`,
+      },
+    },
+  };
+}
+
 export default async function Department({ params }) {
   const { path } = await params;
   const Departments = await getDepartmentsData();

@@ -30,7 +30,10 @@ export const metadata = {
   authors: [
     {
       name: "كلية الهندسة جامعة سوهاج",
-      url: "https://sohag-faculty-of-engineering.vercel.app/",
+      url: "sohag-faculty-of-engineering.vercel.app",
+    },
+    {
+      name: "NOVER MOHSEN",
     },
   ],
   openGraph: {
@@ -39,6 +42,14 @@ export const metadata = {
       "اكتشف البرامج الأكاديمية والبحثية المتميزة في قلب الصعيد. مستقبل الهندسة يبدأ هنا.",
     url: "https://sohag-faculty-of-engineering.vercel.app/",
     siteName: "كلية الهندسة جامعة سوهاج",
+    images: [
+      {
+        url: "/icon/metadataImage.png",
+        width: 1200,
+        height: 630,
+        alt: "شعار كلية الهندسة جامعة سوهاج",
+      },
+    ],
     locale: "ar_AR",
     type: "website",
   },
