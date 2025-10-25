@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "كلية الهندسة جامعة سوهاج",
     images: [
       {
-        url: "/icon/metadataImage.png",
+        url: "https://raw.githubusercontent.com/novermohsen/sohag-faculty-of-engineering/refs/heads/main/frontend/app/icon/metadataImage.png",
         width: 1200,
         height: 630,
         alt: "شعار كلية الهندسة جامعة سوهاج",

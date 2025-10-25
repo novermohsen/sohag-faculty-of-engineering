@@ -44,7 +44,7 @@ export const metadata = {
     siteName: "كلية الهندسة جامعة سوهاج",
     images: [
       {
-        url: "/icon/metadataImage.png",
+        url: "https://raw.githubusercontent.com/novermohsen/sohag-faculty-of-engineering/refs/heads/main/frontend/app/icon/metadataImage.png",
         width: 1200,
         height: 630,
         alt: "شعار كلية الهندسة جامعة سوهاج",
@@ -59,7 +59,8 @@ export const metadata = {
     title: "كلية الهندسة جامعة سوهاج",
     description:
       "الموقع الرسمي لـ كلية الهندسة بجامعة سوهاج. برامج مدنية، حاسبات، اتصالات، وقوى.",
-    images: "[رابط صورة شعار الكلية أو مبنى الكلية بدقة 1200x630 بكسل]",
+    images:
+      "https://raw.githubusercontent.com/novermohsen/sohag-faculty-of-engineering/refs/heads/main/frontend/app/icon/metadataImage.png",
   },
   robots: {
     index: true,
