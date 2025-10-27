@@ -1,10 +1,7 @@
-import { getNewsData } from "@/lib/getApiData";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import Link from "next/link";
 
-async function SingleNewsPage({ id }) {
-  let news = await getNewsData();
-  let singleNew = news.find((e) => +e.id === +id);
+async function SingleNewsPage({ singleNew }) {
   let updatedAtDate = new Date(singleNew.updatedAt);
   let printedUpDatedAt = `${updatedAtDate.getFullYear()}-${
     updatedAtDate.getMonth() + 1

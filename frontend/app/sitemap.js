@@ -22,7 +22,7 @@ export default function sitemap() {
     {
       url: `${baseUrl}/news`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "daily",
       priority: 0.8,
     },
   ];

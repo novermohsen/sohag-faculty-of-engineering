@@ -14,14 +14,21 @@ export async function generateMetadata({ params }) {
       url: `sohag-faculty-of-engineering.vercel.app/departments/${path}`,
       images: [
         {
-          url: "/icon/metadataImage.png",
+          url: Department?.thumbnail?.formats?.medium?.url,
           width: 1200,
           height: 630,
-          alt: "صورة كلية الهندسة جامعة سوهاج",
+          alt: Department?.title,
         },
       ],
       locale: "ar_EG",
       type: "website",
+    },
+    twitter: {
+      site: "https://sohag-faculty-of-engineering.vercel.app/",
+      creator: "@SohagUnivEng",
+      title: Department?.title,
+      description: Department?.title,
+      images: Department?.thumbnail?.formats?.medium?.url,
     },
     robots: {
       index: true,
