@@ -450,6 +450,10 @@ export interface ApiDepartmentDepartment extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Required;
     description: Schema.Attribute.Blocks;
+    latest_news: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::latest-new.latest-new'
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -487,6 +491,11 @@ export interface ApiLatestNewLatestNew extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    date: Schema.Attribute.Date & Schema.Attribute.Required;
+    departments: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::department.department'
+    >;
     description: Schema.Attribute.Blocks;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<

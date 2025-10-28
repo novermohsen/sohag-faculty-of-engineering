@@ -10,7 +10,7 @@ export default async function News() {
         img={card?.thumbnail?.formats?.small?.url}
         title={card.title}
         alt={`صورة ${card.title}`}
-        date={card.publishedAt}
+        date={card.date}
         href={`news/${card.id}`}
       />
     );

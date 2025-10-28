@@ -49,6 +49,12 @@
       "type": "component",
       "component": "article-component.article",
       "repeatable": true
+    },
+    "latest_news": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::latest-new.latest-new",
+      "inversedBy": "departments"
     }
   }
 }

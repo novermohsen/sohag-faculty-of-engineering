@@ -1,5 +1,6 @@
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import Alink from "./Alink";
+import Link from "next/link";
 
 function DepartmentCompnent({
   title,
@@ -7,6 +8,7 @@ function DepartmentCompnent({
   specializtions = [],
   articles = [],
   type,
+  path
 }) {
   let articlesComponent = articles.map((article, i) => {
     return (
@@ -73,9 +75,15 @@ function DepartmentCompnent({
       </div>
       {specializtionComponent}
       {articlesComponent}
-      <p className="my-5 bg-amber-600  p-3 rounded-sm text-center font-bold text-3xl">
+      <p className="my-5 bg-slate-100 p-3 rounded-sm text-center font-bold text-3xl">
         هذا البرنامج : {type}
       </p>
+      <Link
+        href={`/departments/${path}/news`}
+        className="block w-full p-3 bg-sky-700 hover:bg-sky-800 hover:scale-105 duration-150 rounded-sm text-center text-white text-xl font-bold"
+      >
+        الذهاب إلى الأخبار الخاصة بالقسم
+      </Link>
     </section>
   );
 }

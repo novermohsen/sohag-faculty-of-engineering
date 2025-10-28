@@ -2,10 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 function NewsPostCard({ img, alt, title, date, href = "/" }) {
-  let postedDate = new Date(date);
-  let printedDate = `${postedDate.getFullYear()}-${
-    postedDate.getMonth() + 1
-  }-${postedDate.getDate()}`;
   return (
     <Link
       href={href}
@@ -21,7 +17,7 @@ function NewsPostCard({ img, alt, title, date, href = "/" }) {
         className="max-h-50 hover:scale-105 duration-150 w-full aspect-video"
       />
       <h4 className="mt-4 font-bold text-2xl p-3 text-center">{title}</h4>
-      <p className="text-center text-slate-600 my-4 px-3">{printedDate}</p>
+      <p className="text-center text-slate-600 my-4 px-3">{date}</p>
     </Link>
   );
 }

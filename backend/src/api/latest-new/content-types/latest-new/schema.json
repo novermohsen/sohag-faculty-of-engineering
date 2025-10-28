@@ -26,6 +26,16 @@
         "images",
         "files"
       ]
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "departments": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::department.department",
+      "mappedBy": "latest_news"
     }
   }
 }

@@ -63,6 +63,7 @@ export default async function Department({ params }) {
       articles={Department?.articles}
       description={Department?.description}
       specializtions={Department?.specializtion}
+      path={path}
     />
   );
 }
