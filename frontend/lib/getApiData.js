@@ -1,6 +1,6 @@
 export async function getDepartmentsData() {
   const response = await fetch(
-    `${process.env.STRAPI_HOST}/api/departments?populate=*`,
+    `${process.env.STRAPI_HOST}/api/departments?populate[specializtion]=*&populate[articles][populate]=*&populate[latest_news][populate]=*&populate[thmbnail][populate]=*`,
     { cache: "no-store" }
   );
   const jsonData = await response.json();
