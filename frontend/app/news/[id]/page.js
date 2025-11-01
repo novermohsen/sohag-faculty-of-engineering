@@ -3,8 +3,8 @@ import { getNewsData } from "@/lib/getApiData";
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
-  let news = await getNewsData();
-  let singleNew = news.find((e) => +e.id === +id);
+  let news = await getNewsData(`?filters[id][$eq]=${id}&populate=*`);
+  const singleNew = await news[0];
   return {
     title: singleNew?.title,
     description: singleNew?.title,
@@ -59,7 +59,9 @@ export async function generateMetadata({ params }) {
 
 export default async function page({ params }) {
   const { id } = await params;
-  let news = await getNewsData();
-  let singleNew = news.find((e) => +e.id === +id);
+  let news = await getNewsData(`?filters[id][$eqi]=${id}&populate=*`);
+  const singleNew = await news[0];
+  console.log(singleNew);
+  if (!news[0]) throw notFound();
   return <NewsPage singleNew={singleNew} />;
 }

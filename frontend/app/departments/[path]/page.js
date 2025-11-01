@@ -3,8 +3,9 @@ import { getDepartmentsData } from "@/lib/getApiData";
 
 export async function generateMetadata({ params }) {
   const { path } = await params;
-  const Departments = await getDepartmentsData();
-  const Department = Departments.find((ele) => ele.path === path);
+  const Department = await getDepartmentsData(
+    `?filters[path][$eqi]=${path}&populate[specializtion]=*&populate[articles][populate]=*&populate[latest_news][populate]=*&populate[thmbnail][populate]=*`
+  );
   return {
     title: Department?.title,
     description: Department?.description,

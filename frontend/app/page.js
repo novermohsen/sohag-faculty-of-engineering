@@ -6,27 +6,15 @@ import { GoMoveToStart } from "react-icons/go";
 import Link from "next/link";
 import { getNewsData } from "@/lib/getApiData";
 import NewsPostCard from "./components/cards/NewsPostCard";
+import ImagesSlides from "./components/ImagesSlides";
 export default async function Home() {
-  let newsData = await getNewsData();
-  if (newsData != null) {
-    newsData.length = 3;
-  }
+  let newsData = await getNewsData(
+    `?fields[0]=title&fields[1]=id&fields[2]=date&populate[thumbnail][fields][0]=formats&pagination[limit]=3&sort=createdAt:desc`
+  );
   return (
     <>
-      <section className="landing-page flex justify-center items-center">
-        <div className="mt-8 font-bold text-center">
-          <h3 className="text-3xl md:text-4xl text-slate-50 animate-[showUp_.6s_linear]">
-            مرحباً بكم فى موقع
-          </h3>
-          <h1 className="text-5xl md:text-6xl text-amber-600  my-5 animate-[showUp_.6s_ease-in]">
-            كلية الهندسة جامعة سوهاج
-          </h1>
-          <p className="text-slate-300 text-xl md:text-2xl animate-[showUp_.6s_ease-in] max-w-[80%] mx-auto">
-            تعمل كلية الهندسة بجامعة سوهاج على تقديم تعليم هندسي متميز وتقدم بحث
-            علمي مواكب لتطورات العصر فى ضوء التنمية المستدامة والمعايير القومية
-            وقيم المجتمع النبيلة
-          </p>
-        </div>
+      <section>
+        <ImagesSlides />
       </section>
       <section className="border-y-2 border-slate-100">
         <div className="container flex justify-center items-center flex-col gap-5 md:flex-row py-5 sm:py-10 md:py-20">

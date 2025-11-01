@@ -7,10 +7,14 @@ import { IoIosArrowDown } from "react-icons/io";
 function Header() {
   return (
     <>
-      <header className="border-b border-slate-700 w-full sticky top-0 left-0 z-10 bg-slate-100">
-        <section className="container  flex justify-between items-center flex-col sm:flex-row font-bold">
+      <header className="shadow-xl w-full sticky top-0 left-0 z-50 bg-gray-100">
+        <section className="max-w-7xl mx-auto  flex justify-between items-center flex-col sm:flex-row font-bold">
           <div className="w-full sm:w-max flex flex-1 justify-between py-3 px-4 text-2xl">
-            <Link href="/" className="flex items-center gap-4 select-none" key={1}>
+            <Link
+              href="/"
+              className="flex items-center gap-4 select-none"
+              key={1}
+            >
               <Image
                 src={LogoImage}
                 width={33}
@@ -32,20 +36,26 @@ function Header() {
             </button>
           </div>
           <nav
-            className="w-full flex-2 bg-gray-100 sm:bg-transparent hidden sm:flex show-nav text-xl"
+            className="w-full flex-3 bg-gray-100 sm:bg-transparent hidden sm:flex show-nav text-[16px]"
             id="navBar"
           >
-            <ul className="divide-slate-500 divide-y sm:divide-none sm:flex gap-3 ">
-              <li className="li-nav-bar links-list">
+            <ul className="divide-slate-500 divide-y sm:divide-none sm:flex gap-.5 ">
+              <li className="li-nav-bar">
+                <Link href="/about-college">عن الكلية</Link>
+              </li>
+              <li className="li-nav-bar">
+                <Link href="/news">أحدث الأخبار</Link>
+              </li>
+              <li className="li-nav-bar links-lists">
                 <Link
                   href="/departments"
-                  className="flex items-center justify-center gap-1 li-icon-rotate"
+                  className="flex items-center justify-center gap-0.5 li-icon-rotate"
                 >
                   الأقسام العلمية
                   <IoIosArrowDown />
                 </Link>
-                <div className="perant relative hidden  z-40">
-                  <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-gray-200 divide-slate-100 divide-y-2 rounded-md text-xl sm:w-[150%]">
+                <div className="perant relative hidden z-40">
+                  <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md sm:w-[150%]">
                     <Link
                       href="/departments/architecture"
                       className="Link-list"
@@ -64,14 +74,126 @@ function Header() {
                   </div>
                 </div>
               </li>
-              <li className="li-nav-bar">
-                <Link href="/about-college">عن الكلية</Link>
+              <li className="li-nav-bar links-lists">
+                <Link
+                  href="/services"
+                  className="flex items-center justify-center gap-0.5 li-icon-rotate"
+                >
+                  الخدمات الطلابية
+                  <IoIosArrowDown />
+                </Link>
+                <div className="perant relative hidden z-40">
+                  <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md sm:w-[150%]">
+                    <Link href="/services" className="Link-list">
+                      محاضرات إلكترونية
+                    </Link>
+                    <Link href="/services" className="Link-list">
+                      شؤون التعليم و الطلاب
+                    </Link>
+                    <Link href="/services" className="Link-list">
+                      برامج البكالوريوس
+                    </Link>
+                    <Link href="/services" className="Link-list">
+                      اتحاد الطلاب
+                    </Link>
+                  </div>
+                </div>
               </li>
-              <li className="li-nav-bar">
-                <Link href="/services">الخدمات الطلابية</Link>
+              <li className="li-nav-bar links-lists">
+                <Link
+                  href="/faculty-members"
+                  className="flex items-center justify-center gap-0.5 li-icon-rotate"
+                >
+                  أعضاء هيئة التدريس
+                  <IoIosArrowDown />
+                </Link>
+                <div className="perant relative hidden z-40">
+                  <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md sm:w-[150%]">
+                    <Link href="/faculty-members" className="Link-list">
+                      مواقع أعضاء هيئة التدريس
+                    </Link>
+                    <Link href="/faculty-members" className="Link-list">
+                      منح وبعثات
+                    </Link>
+                    <Link href="/faculty-members" className="Link-list">
+                      منح وبعثات
+                    </Link>
+                    <Link href="/faculty-members" className="Link-list">
+                      بوابة الخدمات الجامعية
+                    </Link>
+                    <Link href="/faculty-members" className="Link-list">
+                      صندوق علاج أعضاء هيئة التدريس
+                    </Link>
+                    <Link href="/faculty-members" className="Link-list">
+                      إرشادات هامة
+                    </Link>
+                  </div>
+                </div>
               </li>
-              <li className="li-nav-bar">
-                <Link href="/news">أحدث الأخبار</Link>
+              <li className="li-nav-bar links-lists">
+                <Link
+                  href="/college-centers"
+                  className="flex items-center justify-center gap-0.5 li-icon-rotate"
+                >
+                  وحدات و مراكز الكلية
+                  <IoIosArrowDown />
+                </Link>
+                <div className="perant relative hidden z-40">
+                  <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md  sm:w-[150%]">
+                    <Link
+                      href="/departments/architecture"
+                      className="Link-list"
+                    >
+                      مركز الاستشارات الهندسية والخدمات المقدمة
+                    </Link>
+                    <Link href="/college-centers" className="Link-list">
+                      وحدة ضمان الجوده
+                    </Link>
+                    <Link href="/college-centers" className="Link-list">
+                      وحدة الإنتاج
+                    </Link>
+                    <Link href="/college-centers" className="Link-list">
+                      وحدة التقويم و الامتحانات و الطلاب
+                    </Link>
+                    <Link href="/college-centers" className="Link-list">
+                      وحدة الخدمات الالكترونية (IT)
+                    </Link>
+                    <Link href="/college-centers" className="Link-list">
+                      البوابة الإلكترونية
+                    </Link>
+                  </div>
+                </div>
+              </li>
+              <li className="li-nav-bar links-lists">
+                <Link
+                  href="/administration"
+                  className="flex items-center justify-center gap-0.5 li-icon-rotate"
+                >
+                  الإدارة
+                  <IoIosArrowDown />
+                </Link>
+                <div className="perant relative hidden z-40">
+                  <div className="flex flex-col sm:absolute left-0 bg-white divide-slate-100 divide-y-2 rounded-md  sm:w-max">
+                    <Link href="/administration" className="Link-list">
+                      كلمة العميد
+                    </Link>
+                    <Link href="/administration" className="Link-list">
+                      قطاع شؤون التعليم و الطلاب
+                    </Link>
+                    <Link href="/administration" className="Link-list">
+                      قطاع شؤون الدراسات العليا
+                    </Link>
+                    <Link href="/administration" className="Link-list">
+                      مجلس الكلية
+                    </Link>
+                    <Link href="/administration" className="Link-list">
+                      أمين الكلية
+                    </Link>
+                    <Link href="/administration" className="Link-list">
+                      الدراسات العليا
+                    </Link>
+                  </div>
+                </div>
               </li>
             </ul>
           </nav>

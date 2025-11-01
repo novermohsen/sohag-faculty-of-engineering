@@ -8,6 +8,11 @@ const nextConfig = {
         hostname: "**.strapiapp.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "**eng.sohag-univ.edu.eg",
+        pathname: "/**",
+      },
     ],
   },
 };

@@ -3,8 +3,8 @@ import { useState } from "react";
 function Button({ title, onClick, state }) {
   return (
     <button
-      className={`bg-sky-600 py-2 px-3 text-slate-100 rounded-md hover:bg-sky-800 duration-150 cursor-pointer flex-1 ${
-        state ? "bg-sky-800" : ""
+      className={`bg-amber-600 py-2 px-3 text-slate-100 rounded-md hover:bg-amber-800 duration-150 cursor-pointer flex-1 ${
+        state ? "bg-amber-800" : ""
       }`}
       onClick={onClick}
     >
@@ -27,10 +27,10 @@ function About() {
   const [currentId, setCurrentId] = useState(1);
   return (
     <section className="container my-10 bg-slate-100  p-4 rounded-md">
-      <h1 className="my-5 py-2 text-4xl font-extrabold text-center border-b-3 border-sky-500 text-slate-900">
+      <h1 className="my-5 py-2 text-4xl font-extrabold text-center border-b-3 border-amber-500 text-slate-900">
         عن الكلية
       </h1>
-      <div className="my-8 border-b-4 border-sky-600 p-2  flex flex-wrap justify-center items-center gap-3 text-xl font-bold">
+      <div className="my-8 border-b-4 border-amber-600 p-2  flex flex-wrap justify-center items-center gap-3 text-xl font-bold">
         <Button
           title="نشأة الكلية"
           onClick={() => setCurrentId(1)}
