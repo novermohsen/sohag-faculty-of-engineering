@@ -30,6 +30,7 @@ export default function Page() {
             src={card?.yoast_head_json?.og_image[0]?.url}
             alt={"image card"}
             className="max-h-50 hover:scale-105 duration-150 w-full aspect-video"
+            priority={true}
           />
         ) : (
           <h1>image not found</h1>

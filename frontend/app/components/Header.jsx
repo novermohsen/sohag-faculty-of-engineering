@@ -76,7 +76,7 @@ function Header() {
               </li>
               <li className="li-nav-bar links-lists">
                 <Link
-                  href="/services"
+                  href="/"
                   className="flex items-center justify-center gap-0.5 li-icon-rotate"
                 >
                   الخدمات الطلابية
@@ -84,16 +84,16 @@ function Header() {
                 </Link>
                 <div className="perant relative hidden z-40">
                   <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md sm:w-[150%]">
-                    <Link href="/services" className="Link-list">
+                    <Link href="/" className="Link-list">
                       محاضرات إلكترونية
                     </Link>
-                    <Link href="/services" className="Link-list">
+                    <Link href="/" className="Link-list">
                       شؤون التعليم و الطلاب
                     </Link>
-                    <Link href="/services" className="Link-list">
+                    <Link href="/" className="Link-list">
                       برامج البكالوريوس
                     </Link>
-                    <Link href="/services" className="Link-list">
+                    <Link href="/" className="Link-list">
                       اتحاد الطلاب
                     </Link>
                   </div>
@@ -101,7 +101,7 @@ function Header() {
               </li>
               <li className="li-nav-bar links-lists">
                 <Link
-                  href="/faculty-members"
+                  href="/"
                   className="flex items-center justify-center gap-0.5 li-icon-rotate"
                 >
                   أعضاء هيئة التدريس
@@ -109,22 +109,22 @@ function Header() {
                 </Link>
                 <div className="perant relative hidden z-40">
                   <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md sm:w-[150%]">
-                    <Link href="/faculty-members" className="Link-list">
+                    <Link href="/" className="Link-list">
                       مواقع أعضاء هيئة التدريس
                     </Link>
-                    <Link href="/faculty-members" className="Link-list">
+                    <Link href="/" className="Link-list">
                       منح وبعثات
                     </Link>
-                    <Link href="/faculty-members" className="Link-list">
+                    <Link href="/" className="Link-list">
                       منح وبعثات
                     </Link>
-                    <Link href="/faculty-members" className="Link-list">
+                    <Link href="/" className="Link-list">
                       بوابة الخدمات الجامعية
                     </Link>
-                    <Link href="/faculty-members" className="Link-list">
+                    <Link href="/" className="Link-list">
                       صندوق علاج أعضاء هيئة التدريس
                     </Link>
-                    <Link href="/faculty-members" className="Link-list">
+                    <Link href="/" className="Link-list">
                       إرشادات هامة
                     </Link>
                   </div>
@@ -132,7 +132,7 @@ function Header() {
               </li>
               <li className="li-nav-bar links-lists">
                 <Link
-                  href="/college-centers"
+                  href="/"
                   className="flex items-center justify-center gap-0.5 li-icon-rotate"
                 >
                   وحدات و مراكز الكلية
@@ -141,24 +141,24 @@ function Header() {
                 <div className="perant relative hidden z-40">
                   <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md  sm:w-[150%]">
                     <Link
-                      href="/departments/architecture"
+                      href="/"
                       className="Link-list"
                     >
                       مركز الاستشارات الهندسية والخدمات المقدمة
                     </Link>
-                    <Link href="/college-centers" className="Link-list">
+                    <Link href="/" className="Link-list">
                       وحدة ضمان الجوده
                     </Link>
-                    <Link href="/college-centers" className="Link-list">
+                    <Link href="/" className="Link-list">
                       وحدة الإنتاج
                     </Link>
-                    <Link href="/college-centers" className="Link-list">
+                    <Link href="/" className="Link-list">
                       وحدة التقويم و الامتحانات و الطلاب
                     </Link>
-                    <Link href="/college-centers" className="Link-list">
+                    <Link href="/" className="Link-list">
                       وحدة الخدمات الالكترونية (IT)
                     </Link>
-                    <Link href="/college-centers" className="Link-list">
+                    <Link href="/" className="Link-list">
                       البوابة الإلكترونية
                     </Link>
                   </div>
@@ -166,7 +166,7 @@ function Header() {
               </li>
               <li className="li-nav-bar links-lists">
                 <Link
-                  href="/administration"
+                  href="/"
                   className="flex items-center justify-center gap-0.5 li-icon-rotate"
                 >
                   الإدارة
@@ -174,22 +174,22 @@ function Header() {
                 </Link>
                 <div className="perant relative hidden z-40">
                   <div className="flex flex-col sm:absolute left-0 bg-white divide-slate-100 divide-y-2 rounded-md  sm:w-max">
-                    <Link href="/administration" className="Link-list">
+                    <Link href="/" className="Link-list">
                       كلمة العميد
                     </Link>
-                    <Link href="/administration" className="Link-list">
+                    <Link href="/" className="Link-list">
                       قطاع شؤون التعليم و الطلاب
                     </Link>
-                    <Link href="/administration" className="Link-list">
+                    <Link href="/" className="Link-list">
                       قطاع شؤون الدراسات العليا
                     </Link>
-                    <Link href="/administration" className="Link-list">
+                    <Link href="/" className="Link-list">
                       مجلس الكلية
                     </Link>
-                    <Link href="/administration" className="Link-list">
+                    <Link href="/" className="Link-list">
                       أمين الكلية
                     </Link>
-                    <Link href="/administration" className="Link-list">
+                    <Link href="/" className="Link-list">
                       الدراسات العليا
                     </Link>
                   </div>
