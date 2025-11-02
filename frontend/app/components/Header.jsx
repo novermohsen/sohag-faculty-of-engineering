@@ -27,16 +27,16 @@ function Header() {
             </Link>
             <button
               className="cursor-pointer sm:hidden"
-              onClick={() => {
-                document.getElementById("navBar").classList.toggle("hidden");
-                document.getElementById("overlay").classList.toggle("hidden");
-              }}
+              onClick={() => setNavOpen((s) => !s)}
+              aria-label="Toggle navigation"
             >
               <FaRegChartBar className="font-bold" />
             </button>
           </div>
           <nav
-            className="w-full flex-3 bg-gray-100 sm:bg-transparent hidden sm:flex show-nav text-[16px]"
+            className={`w-full flex-3 bg-gray-100 sm:bg-transparent ${
+              navOpen ? "" : "hidden"
+            } sm:flex show-nav text-[16px]`}
             id="navBar"
           >
             <ul className="divide-slate-500 divide-y sm:divide-none sm:flex gap-.5 ">
