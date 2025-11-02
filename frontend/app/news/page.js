@@ -26,6 +26,7 @@ export default async function News() {
       <Link
         className="bg-slate-900 text-white p-3 fixed bottom-5 right-5 rounded-sm"
         href="/news/old-news"
+        prefetch={false}
       >
         أخبار سابقة
       </Link>

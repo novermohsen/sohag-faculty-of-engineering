@@ -27,16 +27,16 @@ function Header() {
             </Link>
             <button
               className="cursor-pointer sm:hidden"
-              onClick={() => setNavOpen((s) => !s)}
-              aria-label="Toggle navigation"
+              onClick={() => {
+                document.getElementById("navBar").classList.toggle("hidden");
+                document.getElementById("overlay").classList.toggle("hidden");
+              }}
             >
               <FaRegChartBar className="font-bold" />
             </button>
           </div>
           <nav
-            className={`w-full flex-3 bg-gray-100 sm:bg-transparent ${
-              navOpen ? "" : "hidden"
-            } sm:flex show-nav text-[16px]`}
+            className="w-full flex-3 bg-gray-100 sm:bg-transparent hidden sm:flex show-nav text-[16px]"
             id="navBar"
           >
             <ul className="divide-slate-500 divide-y sm:divide-none sm:flex gap-.5 ">
@@ -134,31 +134,31 @@ function Header() {
               </li>
               <li className="li-nav-bar links-lists">
                 <Link
-                  prefetch={false}
                   href="/"
                   className="flex items-center justify-center gap-0.5 li-icon-rotate"
+                  prefetch={false}
                 >
                   وحدات و مراكز الكلية
                   <IoIosArrowDown />
                 </Link>
                 <div className="perant relative hidden z-40">
                   <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md  sm:w-[150%]">
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       مركز الاستشارات الهندسية والخدمات المقدمة
                     </Link>
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       وحدة ضمان الجوده
                     </Link>
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       وحدة الإنتاج
                     </Link>
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       وحدة التقويم و الامتحانات و الطلاب
                     </Link>
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       وحدة الخدمات الالكترونية (IT)
                     </Link>
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       البوابة الإلكترونية
                     </Link>
                   </div>
@@ -166,31 +166,31 @@ function Header() {
               </li>
               <li className="li-nav-bar links-lists">
                 <Link
-                  prefetch={false}
                   href="/"
                   className="flex items-center justify-center gap-0.5 li-icon-rotate"
+                  prefetch={false}
                 >
                   الإدارة
                   <IoIosArrowDown />
                 </Link>
                 <div className="perant relative hidden z-40">
                   <div className="flex flex-col sm:absolute left-0 bg-white divide-slate-100 divide-y-2 rounded-md  sm:w-max">
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       كلمة العميد
                     </Link>
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       قطاع شؤون التعليم و الطلاب
                     </Link>
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       قطاع شؤون الدراسات العليا
                     </Link>
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       مجلس الكلية
                     </Link>
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       أمين الكلية
                     </Link>
-                    <Link prefetch={false} href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       الدراسات العليا
                     </Link>
                   </div>
