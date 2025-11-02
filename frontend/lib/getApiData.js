@@ -20,8 +20,7 @@ export async function getNewsData(params = `?populate=*&sort=createdAt:desc`) {
 
 export async function getWordpressData(pageId = 1) {
   const response = await fetch(
-    `https://eng.sohag-univ.edu.eg/main/wp-json/wp/v2/posts?per_page=12&page=${pageId}`,
-    { cache: "no-store" }
+    `https://eng.sohag-univ.edu.eg/main/wp-json/wp/v2/posts?per_page=12&page=${pageId}`
   );
   const data = await response.json();
   return data;

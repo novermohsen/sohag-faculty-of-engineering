@@ -78,22 +78,23 @@ function Header() {
                 <Link
                   href="/"
                   className="flex items-center justify-center gap-0.5 li-icon-rotate"
+                  prefetch={false}
                 >
                   الخدمات الطلابية
                   <IoIosArrowDown />
                 </Link>
                 <div className="perant relative hidden z-40">
                   <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md sm:w-[150%]">
-                    <Link href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       محاضرات إلكترونية
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       شؤون التعليم و الطلاب
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       برامج البكالوريوس
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       اتحاد الطلاب
                     </Link>
                   </div>
@@ -103,28 +104,29 @@ function Header() {
                 <Link
                   href="/"
                   className="flex items-center justify-center gap-0.5 li-icon-rotate"
+                  prefetch={false}
                 >
                   أعضاء هيئة التدريس
                   <IoIosArrowDown />
                 </Link>
                 <div className="perant relative hidden z-40">
                   <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md sm:w-[150%]">
-                    <Link href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       مواقع أعضاء هيئة التدريس
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       منح وبعثات
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       منح وبعثات
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       بوابة الخدمات الجامعية
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       صندوق علاج أعضاء هيئة التدريس
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link href="/" className="Link-list" prefetch={false}>
                       إرشادات هامة
                     </Link>
                   </div>
@@ -132,6 +134,7 @@ function Header() {
               </li>
               <li className="li-nav-bar links-lists">
                 <Link
+                  prefetch={false}
                   href="/"
                   className="flex items-center justify-center gap-0.5 li-icon-rotate"
                 >
@@ -140,25 +143,22 @@ function Header() {
                 </Link>
                 <div className="perant relative hidden z-40">
                   <div className="flex flex-col sm:absolute sm:left-[50%] sm:translate-x-[-50%] bg-white divide-slate-100 divide-y-2 rounded-md  sm:w-[150%]">
-                    <Link
-                      href="/"
-                      className="Link-list"
-                    >
+                    <Link prefetch={false} href="/" className="Link-list">
                       مركز الاستشارات الهندسية والخدمات المقدمة
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       وحدة ضمان الجوده
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       وحدة الإنتاج
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       وحدة التقويم و الامتحانات و الطلاب
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       وحدة الخدمات الالكترونية (IT)
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       البوابة الإلكترونية
                     </Link>
                   </div>
@@ -166,6 +166,7 @@ function Header() {
               </li>
               <li className="li-nav-bar links-lists">
                 <Link
+                  prefetch={false}
                   href="/"
                   className="flex items-center justify-center gap-0.5 li-icon-rotate"
                 >
@@ -174,22 +175,22 @@ function Header() {
                 </Link>
                 <div className="perant relative hidden z-40">
                   <div className="flex flex-col sm:absolute left-0 bg-white divide-slate-100 divide-y-2 rounded-md  sm:w-max">
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       كلمة العميد
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       قطاع شؤون التعليم و الطلاب
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       قطاع شؤون الدراسات العليا
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       مجلس الكلية
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       أمين الكلية
                     </Link>
-                    <Link href="/" className="Link-list">
+                    <Link prefetch={false} href="/" className="Link-list">
                       الدراسات العليا
                     </Link>
                   </div>
