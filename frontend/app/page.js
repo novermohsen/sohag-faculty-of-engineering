@@ -13,7 +13,8 @@ export default async function Home() {
   );
   return (
     <>
-      <section>
+      <section className="min-h-screen bg-[#0d1117] text-white">
+        <div className="landing-page relative min-h-screen overflow-hidden"></div>
         <ImagesSlides />
       </section>
       <section className="border-y-2 border-slate-100">
