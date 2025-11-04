@@ -9,16 +9,16 @@ html {
 .container {
   @apply max-w-5xl mx-auto;
 }
-.landing-page {
+.landing-page{
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
-      to bottom,
-      oklch(20.841% 0.04169 266.371 / 0.75),
-      oklch(12.985% 0.04254 265.146 / 0.8)
-    ),
-    url("../public/images/backImage.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    to bottom,
+    oklch(20.841% 0.04169 266.371 / 0.75),
+    oklch(12.985% 0.04254 265.146 / 0.8)
+  );
 }
 .li-nav-bar {
   @apply px-2 py-1 relative text-center duration-150 z-2;

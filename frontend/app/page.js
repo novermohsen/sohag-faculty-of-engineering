@@ -7,14 +7,25 @@ import Link from "next/link";
 import { getNewsData } from "@/lib/getApiData";
 import NewsPostCard from "./components/cards/NewsPostCard";
 import ImagesSlides from "./components/ImagesSlides";
+import backImage from "@/public/images/backImage.webp";
 export default async function Home() {
   let newsData = await getNewsData(
     `?fields[0]=title&fields[1]=id&fields[2]=date&populate[thumbnail][fields][0]=formats&pagination[limit]=3&sort=createdAt:desc`
   );
   return (
     <>
-      <section className="min-h-screen bg-[#0d1117] text-white">
-        <div className="landing-page relative min-h-screen overflow-hidden"></div>
+      <section className="relative top-0 left-0 min-h-screen">
+        <Image
+          src={backImage}
+          alt="landing image"
+          priority={true}
+          fetchPriority="high"
+          width={1920}
+          height={1080}
+          sizes="(min-width: 1024px) 1200px, (min-width: 640px) 800px, 480px"
+          className="w-full min-h-screen object-cover"
+        />
+        <div className="landing-page min-h-screen overflow-hidden"></div>
         <ImagesSlides />
       </section>
       <section className="border-y-2 border-slate-100">
