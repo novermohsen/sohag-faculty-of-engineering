@@ -3,7 +3,11 @@ export async function getDepartmentsData(
 ) {
   const response = await fetch(
     `${process.env.STRAPI_HOST}/api/departments${params}`,
-    { cache: "no-store" }
+    {
+      next: {
+        revalidate: 14400,
+      },
+    }
   );
   const jsonData = await response.json();
   return jsonData.data;
@@ -12,7 +16,11 @@ export async function getDepartmentsData(
 export async function getNewsData(params = `?populate=*&sort=createdAt:desc`) {
   const response = await fetch(
     `${process.env.STRAPI_HOST}/api/latest-news${params}`,
-    { cache: "no-store" }
+    {
+      next: {
+        revalidate: 14400,
+      },
+    }
   );
   const jsonData = await response.json();
   return jsonData.data;
